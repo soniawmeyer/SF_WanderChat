@@ -11,8 +11,8 @@ load_dotenv()
 st.set_page_config(page_title="WanderChat", page_icon=":speech_balloon:")
 st.sidebar.title("ChatGPT 3.5")
 
-with st.sidebar:
-    user_api_key = st.text_input("OpenAI API token:","")
+with st.sidebar.expander("OpenAI API token"):
+    user_api_key = st.text_input("","")
     
 if user_api_key:
 

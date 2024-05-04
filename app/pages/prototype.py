@@ -15,8 +15,10 @@ st.sidebar.title("Mistral RAFT")
 hf_token = os.getenv("hf_token")
 
 with st.sidebar:
-    user_hf_token = st.text_input("HF token:","")
-    model_base_url = st.text_input("LLM Inference Endpoint:","")
+    with st.expander("HF token"):
+        user_hf_token = st.text_input("","",key="hf_key")
+    with st.expander("LLM Inference Endpoint"):
+        model_base_url = st.text_input("","",key="model_key")
     
 if user_hf_token and model_base_url:
     chat = ChatOpenAI(
