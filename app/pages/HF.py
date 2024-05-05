@@ -22,9 +22,9 @@ from utils.UI import *
 load_dotenv()
 
 st.set_page_config(page_title="WanderChat", page_icon=":speech_balloon:",layout="wide")
-add_logo("./static/San_Jose_State_Spartans_logo.png","WanderChat, a context-aware travel chatbot.")
+add_logo("https://en.wikipedia.org/wiki/File:San_Jose_State_Spartans_logo.svg")
 
-st.sidebar.title("Custom model")
+# st.sidebar.title("Custom model")
 
 if 'user_hf_token' not in st.session_state: st.session_state['user_hf_token'] = ''
 if 'model_base_url' not in st.session_state: st.session_state['model_base_url'] = ''

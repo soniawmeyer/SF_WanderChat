@@ -11,7 +11,7 @@ from utils.UI import *
 load_dotenv()
 
 st.set_page_config(page_title="WanderChat", page_icon=":speech_balloon:",layout="wide")
-add_logo("./static/ChatGPT_logo.svg.png","A ChatGPT 3.5 clone.")
+add_logo("https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg")
 
 # st.sidebar.title("ChatGPT 3.5")
 
