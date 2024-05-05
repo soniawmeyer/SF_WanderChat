@@ -22,7 +22,7 @@ from utils.UI import *
 load_dotenv()
 
 st.set_page_config(page_title="WanderChat", page_icon=":speech_balloon:",layout="wide")
-add_logo("https://en.wikipedia.org/wiki/File:San_Jose_State_Spartans_logo.svg")
+add_logo("https://en.wikipedia.org/wiki/File:San_Jose_State_Spartans_logo.svg","WanderChat, a context-aware travel chatbot.")
 
 # st.sidebar.title("Custom model")
 
