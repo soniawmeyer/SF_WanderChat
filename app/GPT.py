@@ -6,10 +6,14 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
 import os 
 from dotenv import load_dotenv
+from utils.UI import *
+
 load_dotenv()
 
-st.set_page_config(page_title="WanderChat", page_icon=":speech_balloon:")
-st.sidebar.title("ChatGPT 3.5")
+st.set_page_config(page_title="WanderChat", page_icon=":speech_balloon:",layout="wide")
+add_logo("./static/ChatGPT_logo.svg.png","A ChatGPT 3.5 clone.")
+
+# st.sidebar.title("ChatGPT 3.5")
 
 with st.sidebar.expander("OpenAI API token"):
     user_api_key = st.text_input("","")
